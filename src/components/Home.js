@@ -28,7 +28,7 @@ const Home = ({isAuth}) => {
               <h1>{post.title}</h1>
             </div>
             <div className="post-text">{post.postText}</div>
-            {
+            {/* {
                 isAuth ? (<button className="delete-btn"
                 onClick={() => {
                   deletePost(post.id);
@@ -36,7 +36,7 @@ const Home = ({isAuth}) => {
               >
                 DELETE
               </button>) : (<></>)
-            }
+            } */}
             <div className="author-name">
               <h3>@{post.author.name}</h3>
             </div>
