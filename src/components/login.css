@@ -1,0 +1,21 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    font-size: 46px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.login-page > button {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3500D3;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+.login-page > button:hover{
+    cursor: pointer;
+}
