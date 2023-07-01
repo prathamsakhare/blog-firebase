@@ -13,7 +13,7 @@ function App() {
       localStorage.clear();
       setIsAuth(false);
       // ! the way other than useNavigate to redirect to pages is --
-      window.location.pathname = "/login";
+      window.location.pathname = "/blog-firebase/login";
     });
   };
   return (
