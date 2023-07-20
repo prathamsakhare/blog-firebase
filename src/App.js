@@ -6,6 +6,7 @@ import CreatePost from "./components/CreatePost";
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase";
+import Loader from "./components/Loader";
 function App() {
   const [isAuth, setIsAuth] = useState(false);
   const signUserOut = () => {
@@ -13,12 +14,13 @@ function App() {
       localStorage.clear();
       setIsAuth(false);
       // ! the way other than useNavigate to redirect to pages is --
-      window.location.pathname = "/blog-firebase/login";
+      // window.location.pathname = "/blog-firebase/login";
     });
   };
   return (
     <Router>
       <nav className="navbar">
+        
         <Link className="nav-btn" to={"/"}>Home</Link>
 
         {!isAuth ? (
